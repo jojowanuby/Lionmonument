@@ -67,9 +67,16 @@
 
   <section class="section section-dark">
     <h2>CV From Start till 2000</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
+      <p id="historytext"></p>
+        <script>
+        history = new XMLHttpRequest();
+        history.onload = function() {
+        let output = document.getElementById("historytext");
+        output.innerText = News.responseText;
+        }
+        history.open("GET", "text/history.txt", true);
+        history.send();
+        </script>
   </section>
 
   <div class="pimg3">
@@ -82,9 +89,16 @@
 
   <section class="section section-dark">
     <h2>Interview With a Visitor</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
+      <p id="gueststorry"></p>
+        <script>
+        gueststorry = new XMLHttpRequest();
+        gueststorry.onload = function() {
+        let output = document.getElementById("gueststorry");
+        output.innerText = News.responseText;
+        }
+        gueststorry.open("GET", "text/gueststorry.txt", true);
+        gueststorry.send();
+        </script>
   </section>
 
   <div class="pimg4">
