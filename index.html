@@ -47,13 +47,13 @@
     <h2>Current Constructions</h2>
     <p id="News"></p>
         <script>
-        News = new XMLHttpRequest();
-        News.onload = function() {
+        xhr = new XMLHttpRequest();
+        xhr.onload = function() {
         let output = document.getElementById("News");
-        output.innerText = News.responseText;
+        output.innerText = xhr.responseText;
         }
-        News.open("GET", "text/news.txt", true);
-        News.send();
+        xhr.open("GET", "text/news.txt", true);
+        xhr.send();
         </script>
   </section>
 
