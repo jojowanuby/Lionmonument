@@ -69,13 +69,13 @@
     <h2>Hystory</h2>
       <p id="historytext"></p>
         <script>
-        xhr = new XMLHttpRequest();
-        xhr.onload = function() {
+        xhr2 = new XMLHttpRequest();
+        xhr2.onload = function() {
         let output = document.getElementById("historytext");
-        output.innerText = xhr.responseText;
+        output.innerText = xhr2.responseText;
         }
-        xhr.open("GET", "text/history.txt", true);
-        xhr.send();
+        xhr2.open("GET", "text/history.txt", true);
+        xhr2.send();
         </script>
   </section>
 
