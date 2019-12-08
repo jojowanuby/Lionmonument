@@ -11,7 +11,7 @@ var speed = 1.5;
 var colors = [
   'rgb(19, 166, 144)',
   'rgb(145, 219, 207)',
-  'rgb(235, 218, 204)'
+  'rgb(62, 193, 171)'
 ];
 var loopId, canvas, ctx;
 
