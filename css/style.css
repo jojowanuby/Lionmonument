@@ -211,7 +211,6 @@ footer
   padding-bottom: 2vh;
 }
 
-
 .container{
   margin: 0 auto;
   width: 90%;
@@ -221,15 +220,6 @@ footer
 .impressum
 {
   text-align: left;
-}
-
-.logoimp
-{
-  height: 8vh;
-}
-
-p2{
-  font-size:10px;
 }
 
 @media(max-width:568px){
