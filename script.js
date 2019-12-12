@@ -18,7 +18,7 @@ console.log(myCookie);
 console.log(localStorage)
 
 //Cookie Zeigt leider value als undefined!!!!!
-Cookies.set('datetoday', datetime, { expires: 7 },{ domain: 'jojowanuby.github.io/Test/' });
+Cookies.set('datetoday', datetime, { expires: 7 },{ domain: 'https://jojowanuby.github.io/Lionmonument' });
 
 
 // For todays date;
