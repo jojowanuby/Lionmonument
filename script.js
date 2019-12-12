@@ -10,15 +10,13 @@ return this.n;
 }
 
 window.onload = function() {
-localStorage.setItem("Date"+n ,datetime)
+localStorage.setItem("Date"+n ,this.datetimenow)
 }
 
 //auch wenn man in console myCookie eingiebt leider value als undefined!!!!!
 console.log(myCookie);
 console.log(localStorage)
 
-//Cookie Zeigt leider value als undefined!!!!!
-Cookies.set('datetoday', datetime, { expires: 7 },{ domain: 'https://jojowanuby.github.io/Lionmonument' });
 
 
 // For todays date;
@@ -31,7 +29,11 @@ Date.prototype.timeNow = function () {
    return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes() +":"+ ((this.getSeconds() < 10)?"0":"") + this.getSeconds();
 }
 
-var datetime = "LastSync: " + new Date().today() + " @ " + new Date().timeNow();
+var datetimenow = "LastSync: " + new Date().today() + " @ " + new Date().timeNow();
+
+//Cookie Zeigt leider value als undefined!!!!!
+Cookies.set('datetoday', datetimenow, { expires: 7 },{ domain: 'https://jojowanuby.github.io/Lionmonument' });
+
 
 //inspiration: https://codepen.io/MarcRay/pen/vmJBn
 
